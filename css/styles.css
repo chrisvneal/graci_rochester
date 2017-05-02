@@ -10,10 +10,6 @@ section#home {
   background-color: #fff;
 }
 
-img.comingsoon {
-  width: 50%;
-}
-
 /************ General styling *************/
 html {
   height: 100%;
@@ -25,7 +21,6 @@ body {
   padding-bottom: 116px;
   height: 100%;
   min-height: 50%;
-  background-color: 100%;
 }
 
 p {
@@ -36,12 +31,12 @@ h2 {
   margin-top: 0;
 }
 
+/************ Main Navigation styling *************/
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
 }
 
-/************ Main Navigation styling *************/
 .navbar-default .navbar-brand,
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -58,7 +53,7 @@ h2 {
 
 /************ Info Section styling *************/
 .infoSection {
-  background: #de7ccb;
+  background: #ddc1e6;
 }
 .infoSection .sidemessage {
   padding-top: 20px;
@@ -118,7 +113,7 @@ h2 {
   font-family: Hind, sans-serif;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 20px;
-  border-color: #de7ccb;
+  border-color: #ddc1e6;
 }
 .missionAndPurpose .scripture .scripture-title {
   color: #c596d5;
@@ -168,6 +163,10 @@ footer .copyright {
 }
 
 /*********** Image Styling ***********/
+img.comingsoon {
+  width: 50%;
+}
+
 .graci-pic-bio {
   width: 250px;
   margin-bottom: 15px;
