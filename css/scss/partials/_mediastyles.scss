@@ -1,4 +1,5 @@
 @media screen and (max-width: 767px) { /* anything below 767px */
+	/************ Info Section styling *************/
 	figure {
 		width: 400px;
 		margin: 0 auto;	
@@ -7,12 +8,8 @@
 	.infoSection {
 		background: url($photolinks-bg) ;
 
-		.sidemessage {
-		padding-top: 20px;
-
-			p {
-				margin-bottom: 50px;
-			}
+		.sidemessage p {
+			margin-bottom: 50px;
 		}
 
 		figure img {

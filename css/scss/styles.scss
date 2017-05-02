@@ -1,57 +1,20 @@
-//Colors
-$brand-color-primary: #9446AF;  //light purple
-//$brand-color-light: lighten($brand-color-primary,15%);
-$brand-color-light: #de7ccb;
+@import "partials/values";
 
-$gray-text: #858087; //gray text
-$homepage-background-color: #E8BDAE;
-
-$sans-serif-stack: Helvetica, Arial, sans-serif;
-$photolinks-bg: "../img/bg/bg-nicepurple.jpg";
-$maintext-color: inherit;
-
-
-
- 
-#home, .upcomingEvents {
-	padding: 20px 0;
-}
-
-#home {
-	background-color: #fff;
-}
-
-#homePage {
-	background: $homepage-background-color;
-}
-.upcomingEvents {
-	background: $homepage-background-color;
-	//height: 100%;
-	//max-height: 100%;
-}
-
-img.comingsoon {
-	width: 50%;
-}
-
-
-
-/************ General styling *************/
+/************ Global styling *************/
 
 html {
-	//background-color: red;
 	height: 100%;
 }
-body {
-	font-family: Hind, $sans-serif-stack;
-	font-size: 1.5em;
+
+body {	
+	font: 1.5em Hind, $sans-serif-stack;
 	padding-bottom: 116px;
-	height: 100%;
 	min-height: 50%;
-	//color: $maintext-color;
-	//max-height: 100%;
-	//background-color: $homepage-background-color;
-	background-color: 100%;
+	color: $maintext-color;	
+}
+
+body#homepage {
+	background: $homepage-background-color;
 }
 
 p {
@@ -62,11 +25,13 @@ h2 {
 	margin-top: 0;
 }
 
+
+/************ Main Navigation styling *************/
 .navbar {
 	margin-bottom: 0;
 	border-radius: 0;
 }
-/************ Main Navigation styling *************/
+
 .navbar-default .navbar-brand, 
 .navbar-default .navbar-brand:hover, 
 .navbar-default .navbar-brand:focus {
@@ -81,41 +46,52 @@ h2 {
 	color: $brand-color-primary;
 }
 
+/************ Home Section styling *************/
+#home {
+	background-color: #fff; //white
+}
+
+#home, .upcomingEvents {
+	padding: 20px 0;
+}
+
+.upcomingEvents {
+	background: $homepage-background-color;
+}
+
 /************ Info Section styling *************/
 .infoSection {
 	background: $brand-color-light;
-	//padding-top: 20px;
 
 	.sidemessage {
 		padding-top: 20px;
 
 		p {
-			margin-bottom: 100px;
+			margin-bottom: 60px;
 		}
 	}	
 } /* end of .infoSection */
 
 .photolinks {
 		background: url("../img/bg/bg-nicepurple.jpg") -200px 0;
-		//padding-top: 20px;
 
 		figure {
 			position: relative;
 
 			figcaption {
-				color: white; 
+				color: $brand-color-primary;
 			}				
 
-			.navphoto-text {
+			.navphoto-textbox {
 				width: 100%;
 				height: 40px;
-				background: black;
-				position: absolute;
+				background: black;				
 				opacity: .80;
+				position: absolute;
 				top: 0;
 				color: white;
 				z-index: 5;
-				padding: 2px 0 0 5px;
+				padding: 10px 0 0 5px;
 				letter-spacing: 1px;
 			}
 			
@@ -161,7 +137,7 @@ h2 {
 	}
 
 	[class*="fa-quote"] {
-		color: lighten($gray-text, 30%);
+		color: lighten($smalltext-color, 30%);
 		font-size: 1.7em;
 	}
 }
@@ -203,19 +179,23 @@ footer {
 		}
 
 		i:hover {
-			color: $gray-text;
+			color: $smalltext-color;
 		}
 	}
 
 	.copyright {
 		font-size: .90em;
-		color: $gray-text;
+		color: $smalltext-color;
 		letter-spacing: .30em;
 	}
 }
 
 
 /*********** Image Styling ***********/
+img.comingsoon {
+	width: 50%;
+}
+
 .graci-pic-bio {
 	width: 250px;
 	margin-bottom: 15px;
@@ -230,7 +210,7 @@ footer {
 
 
 /*********** @Media Styling ***********/
-@import "partials/_mediastyles.scss";
+@import "partials/_mediastyles";
  
 
 

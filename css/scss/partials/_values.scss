@@ -1,0 +1,17 @@
+///////////////////////// Colors ////////////////////////////
+
+// brand
+$brand-color-primary: #9446AF;  //light purple
+$brand-color-light: lighten($brand-color-primary,35%);
+
+// text
+$maintext-color: #3b3b3b; // dark gray text
+$smalltext-color: #858087;// gray/dash of purple
+
+// background
+$homepage-background-color: #E8BDAE; //tannish pink
+$photolinks-bg: "../img/bg/bg-nicepurple.jpg";
+
+///////////////////////// Fonts ////////////////////////////
+
+$sans-serif-stack: Helvetica, Arial, sans-serif;
