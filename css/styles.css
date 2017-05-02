@@ -1,0 +1,249 @@
+#home, .upcomingEvents {
+  padding: 20px 0;
+}
+
+#home {
+  background-color: #fff;
+}
+
+#homePage {
+  background: #E8BDAE;
+}
+
+.upcomingEvents {
+  background: #E8BDAE;
+}
+
+img.comingsoon {
+  width: 50%;
+}
+
+/************ General styling *************/
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Hind, Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  padding-bottom: 116px;
+  height: 100%;
+  min-height: 50%;
+  background-color: 100%;
+}
+
+p {
+  line-height: 2;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/************ Main Navigation styling *************/
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  font-family: "Shadows Into Light", Helvetica, Arial, sans-serif;
+  color: #9446AF;
+  font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #9446AF;
+}
+
+/************ Info Section styling *************/
+.infoSection {
+  background: #de7ccb;
+}
+.infoSection .sidemessage {
+  padding-top: 20px;
+}
+.infoSection .sidemessage p {
+  margin-bottom: 100px;
+}
+
+/* end of .infoSection */
+.photolinks {
+  background: url("../img/bg/bg-nicepurple.jpg") -200px 0;
+}
+.photolinks figure {
+  position: relative;
+}
+.photolinks figure figcaption {
+  color: white;
+}
+.photolinks figure .navphoto-text {
+  width: 100%;
+  height: 40px;
+  background: black;
+  position: absolute;
+  opacity: .80;
+  top: 0;
+  color: white;
+  z-index: 5;
+  padding: 2px 0 0 5px;
+  letter-spacing: 1px;
+}
+.photolinks figure img {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  border-radius: 2px;
+}
+
+/************ Mission and Purpose styling *************/
+.missionAndPurpose {
+  padding-top: 20px;
+}
+.missionAndPurpose .heading-title {
+  font-family: "Shadows Into Light", Helvetica, Arial, sans-serif;
+  color: #9446AF;
+  position: relative;
+  left: -1em;
+  bottom: .45em;
+  -webkit-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+.missionAndPurpose p {
+  margin-bottom: 60px;
+}
+.missionAndPurpose .scripture {
+  font-family: Hind, sans-serif;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 20px;
+  border-color: #de7ccb;
+}
+.missionAndPurpose .scripture .scripture-title {
+  color: #c596d5;
+}
+.missionAndPurpose [class*="fa-quote"] {
+  color: #d1cfd1;
+  font-size: 1.7em;
+}
+
+/*********** Contact Info Area styling ************/
+.contact-panel {
+  border-color: transparent;
+  box-shadow: none;
+}
+.contact-panel .panel-heading {
+  border-bottom: 1px solid #d29ec7;
+  background: #faf5f9;
+}
+.contact-panel .info {
+  font-style: italic;
+}
+.contact-panel .social-icons {
+  font-size: 2em;
+}
+
+/************* Footer Styles *************/
+footer {
+  padding: 20px 0 0;
+}
+footer .social-icons {
+  padding-bottom: 25px;
+}
+footer .social-icons i {
+  font-size: 2.2em;
+  color: #9446AF;
+  -webkit-transition: color 200ms linear;
+  -o-transition: color 200ms linear;
+  transition: color 200ms linear;
+}
+footer .social-icons i:hover {
+  color: #858087;
+}
+footer .copyright {
+  font-size: .90em;
+  color: #858087;
+  letter-spacing: .30em;
+}
+
+/*********** Image Styling ***********/
+.graci-pic-bio {
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+.speakersheet {
+  width: 742px;
+  height: 960px;
+  box-shadow: -10px 4px 20px gray;
+  border-radius: 20px;
+}
+
+/*********** @Media Styling ***********/
+@media screen and (max-width: 767px) {
+  /* anything below 767px */
+  figure {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .infoSection {
+    background: url("../img/bg/bg-nicepurple.jpg");
+  }
+  .infoSection .sidemessage {
+    padding-top: 20px;
+  }
+  .infoSection .sidemessage p {
+    margin-bottom: 50px;
+  }
+  .infoSection figure img {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    border-radius: 2px;
+  }
+  .infoSection .photolinks {
+    background: inherit;
+  }
+}
+/* end max-width: 767 */
+@media screen and (max-width: 810px) {
+  /* anything below 810px */
+  .missionAndPurpose .heading-title {
+    position: inherit;
+    left: 0;
+    bottom: 0;
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+/* end max-width: 810 */
+@media screen and (max-width: 992px) {
+  /* anything below 992px */
+  .photolinks {
+    background: none;
+  }
+}
+/* end max-width: 992 */
+@media screen and (min-width: 1920px) {
+  /* anything larger than 1920px */
+  .infoSection {
+    background-size: 1600px 640px;
+    background-position: center;
+  }
+}
+/* end min-width: 1920 */
+@media screen and (max-width: 767px) {
+  .photolinks figure img {
+    height: 280px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

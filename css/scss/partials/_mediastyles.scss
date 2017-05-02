@@ -1,0 +1,61 @@
+@media screen and (max-width: 767px) { /* anything below 767px */
+	figure {
+		width: 400px;
+		margin: 0 auto;	
+	}
+
+	.infoSection {
+		background: url($photolinks-bg) ;
+
+		.sidemessage {
+		padding-top: 20px;
+
+			p {
+				margin-bottom: 50px;
+			}
+		}
+
+		figure img {
+		    width: 100%;
+		    max-width: 400px;
+		    height: 200px;
+		    border-radius: 2px;
+		  }
+
+		.photolinks {
+			background: inherit;			
+		}
+	}  
+} /* end max-width: 767 */
+
+@media screen and (max-width: 810px) { /* anything below 810px */
+	.missionAndPurpose .heading-title {
+		position: inherit;
+		left: 0;
+		bottom: 0;
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+} /* end max-width: 810 */
+
+@media screen and (max-width: 992px) { /* anything below 992px */
+	.photolinks {
+		background: none;
+	}
+} /* end max-width: 992 */
+
+@media screen and (min-width: 1920px) { /* anything larger than 1920px */
+	.infoSection {
+		background-size: 1600px 640px;
+		background-position: center;
+	}
+} /* end min-width: 1920 */
+
+@media screen and (max-width: 767px) {
+	 .photolinks figure img {
+	 		height: 280px;
+	  }
+}
+
