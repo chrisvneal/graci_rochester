@@ -4,30 +4,23 @@ $brand-color-primary: #9446AF;  //light purple
 $brand-color-light: #de7ccb;
 
 $gray-text: #858087; //gray text
-$homepage-background-color: #E8BDAE;
+$homepage-background-color: #E8BDAE; //tannish pink
 
 $sans-serif-stack: Helvetica, Arial, sans-serif;
 $photolinks-bg: "../img/bg/bg-nicepurple.jpg";
 $maintext-color: inherit;
 
 
+#homePage, .upcomingEvents {
+	background: $homepage-background-color;
+}
 
- 
-#home, .upcomingEvents {
+section#home, .upcomingEvents {
 	padding: 20px 0;
 }
 
-#home {
+section#home {
 	background-color: #fff;
-}
-
-#homePage {
-	background: $homepage-background-color;
-}
-.upcomingEvents {
-	background: $homepage-background-color;
-	//height: 100%;
-	//max-height: 100%;
 }
 
 img.comingsoon {
@@ -49,8 +42,6 @@ body {
 	height: 100%;
 	min-height: 50%;
 	//color: $maintext-color;
-	//max-height: 100%;
-	//background-color: $homepage-background-color;
 	background-color: 100%;
 }
 

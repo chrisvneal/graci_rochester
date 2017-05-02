@@ -1,17 +1,13 @@
-#home, .upcomingEvents {
+#homePage, .upcomingEvents {
+  background: #E8BDAE;
+}
+
+section#home, .upcomingEvents {
   padding: 20px 0;
 }
 
-#home {
+section#home {
   background-color: #fff;
-}
-
-#homePage {
-  background: #E8BDAE;
-}
-
-.upcomingEvents {
-  background: #E8BDAE;
 }
 
 img.comingsoon {
